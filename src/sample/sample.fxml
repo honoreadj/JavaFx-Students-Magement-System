@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="1000.0" stylesheets="@Stylesheet.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #334ff4; -fx-border-width: 0px 2px 0px 0px;" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="20.0" layoutY="23.0" mnemonicParsing="false" onAction="#logRegister" prefHeight="39.0" prefWidth="144.0" style="-fx-background-color: #334ff4; -fx-background-radius: 10;" text="Add Student" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="20.0" layoutY="91.0" mnemonicParsing="false" onAction="#showAllStudent" style="-fx-background-color: #334ff4; -fx-background-radius: 10;" text="Show Students" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </left>
+   <top>
+      <AnchorPane prefHeight="95.0" prefWidth="800.0" style="-fx-background-color: #334ff4;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="WHITE" layoutX="250.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Management System" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="373.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Education is backbone of the nation" textAlignment="CENTER">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Button id="crossButton" layoutX="963.0" mnemonicParsing="false" onAction="#exit" text="×" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <JFXButton id="minusButton" layoutX="938.0" onAction="#minimize" text="-" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </top>
+   <right>
+      <AnchorPane fx:id="rootPane" prefHeight="455.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="#334ff4" layoutX="255.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose an action" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

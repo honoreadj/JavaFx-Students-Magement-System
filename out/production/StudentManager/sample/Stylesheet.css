@@ -1,0 +1,19 @@
+.button:hover {
+    -fx-cursor: hand;
+}
+
+#crossButton, #minusButton {
+    -fx-cursor: default;
+}
+
+#crossButton, #minusButton {
+    -fx-background-color:  #334ff4;
+}
+
+#crossButton:hover {
+    -fx-background-color: #ee1818;
+}
+
+#minusButton:hover {
+    -fx-background-color: #e0e8f1;
+}
